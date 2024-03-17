@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap');
 
 img {
   display: block;
@@ -7,13 +7,13 @@ img {
 
 :root {
   /*  fonts  */
-  --ff-title: 'Angkor', serif;
-  --ff-body: 'Inter', sans-serif;
+  --ff-title: 'Young Serif', serif;
+  --ff-body: 'Outfit', sans-serif;
   /*  colors  */
-  --fc-title1: #1b1b1b;
+  --fc-title1: hsl(24, 5%, 18%);
   --fc-title2: #964b00;
   --fc-title3: #702963;
-  --fc-body: #3b3c36;
+  --fc-body: hsl(30, 10%, 34%);
   /*  bg colors  */
   --bg-pink: #fff0f5;
   --bg-gray: #e5e4e2;
@@ -21,29 +21,29 @@ img {
 
 /* reusable styles */
 .bold {
-  font-weight: bold;
-  color: #1b1b1b;
+  font-weight: 700;
+  color: var(--fc-title1);
 }
 
 .main-header {
   font-family: var(--ff-title);
   font-weight: 400;
-  color: var(--fc-title1);
   font-size: 2rem;
+  color: var(--fc-title1);
 }
 
 .secondary-header {
   font-family: var(--ff-title);
   font-weight: 400;
+  font-size: 1.3rem;
   color: var(--fc-title2);
-  font-size: 1.2rem;
 }
 
 .tertiary-header {
   font-family: var(--ff-body);
   font-weight: 700;
+  font-size: 1.1rem;
   color: var(--fc-title3);
-  font-size: 1.03rem;
 }
 
 /* global styles */
@@ -73,10 +73,14 @@ body {
   justify-content: center;
 
   font-family: var(--ff-body);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
   color: var(--fc-body);
+}
+
+main {
+  padding: 4rem 2rem;
 }
 
 .recipe-wrapper {
@@ -84,7 +88,7 @@ body {
   background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
 }
 
 .recipe-img {
