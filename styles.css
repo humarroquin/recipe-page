@@ -48,6 +48,7 @@ img {
   font-weight: 400;
   font-size: 1.3rem;
   color: var(--fc-title2);
+  margin-bottom: 1rem;
 }
 
 .tertiary-header {
@@ -55,6 +56,7 @@ img {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--fc-title3);
+  margin-bottom: 1rem;
 }
 
 /* global styles */
@@ -106,10 +108,11 @@ main {
   height: 15rem;
   object-fit: cover;
   border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
 .recipe-name {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 /* preparation section */
@@ -121,6 +124,10 @@ main {
 }
 
 /* nutrition section */
+.nutrition .nutrition-description {
+  margin-bottom: 2rem;
+}
+
 .grid-2cl {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -137,5 +144,5 @@ main {
 }
 
 .nutrition hr {
-  margin: 0;
+  margin: 1rem;
 }
